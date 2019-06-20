@@ -19,18 +19,21 @@
     <h1> Survey Questions </h1>
     
       <hr>
-    
-        <h2> About You </h2>
-          <h3> Name (Required) </h3>
+        <h3> About You </h3>
+
+        <br>
+        
+        <h5> Name (Required) </h5>
           <input type="name" class="form-control" id="name">
+
+          <br>
           
-          <h3> Link to Photo Image (Required) </h3>
+        <h5> Link to Photo Image (Required) </h5>
           <input type="text" class="form-control" id="photo">
-    
        <hr>
         
-    <h2> Question 1 </h2>
-      <h3> QUESTION </h3>
+    <h3> Question 1 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q1">
                 <option>Select an Option</option>
@@ -41,9 +44,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 2 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+
+    <h3> Question 2 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q2">
                 <option>Select an Option</option>
@@ -54,9 +59,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 3 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 3 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q3">
                 <option>Select an Option</option>
@@ -67,9 +74,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 4 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 4 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q4">
                 <option>Select an Option</option>
@@ -80,9 +89,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 5 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 5 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q5">
                 <option>Select an Option</option>
@@ -93,9 +104,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 6 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 6 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q6">
                 <option>Select an Option</option>
@@ -106,9 +119,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 7 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 7 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q7">
                 <option>Select an Option</option>
@@ -119,9 +134,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 8 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 8 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q8">
                 <option>Select an Option</option>
@@ -132,9 +149,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 9 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 9 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q9">
                 <option>Select an Option</option>
@@ -145,9 +164,11 @@
                 <option value="5">5 (Strongly Agree)</option>
               </select>
             </div>
-    
-        <h2> Question 10 </h2>
-      <h3> QUESTION </h3>
+
+    <br>
+        
+    <h3> Question 10 </h3>
+      <h5> QUESTION </h5>
             <div class="form-group">
               <select class="form-control" id="q10">
                 <option>Select an Option</option>
@@ -159,33 +180,37 @@
               </select>
             </div>
 
-        <button type="submit" class="btn btn-primary btn-lg fa fa-check-square" id="submit" data-toggle="modal">Submit</button>
+    <br>
 
-        <div class="modal" tabindex="-1" role="dialog" class="connectionModal">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">This is your best match!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <h3 id="connectionName"></h3>
-                  <img id="connectionPhoto" src="" alt="Picture of your Connection">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block" id="submit" data-toggle="modal"><span class="fa fa-check-square"></span> Submit</button>
+
+    <div class="modal" tabindex="-1" role="dialog" class="connectionModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">This is your best match!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-          </div>
+            <div class="modal-body">
+                <h4 id="connectionName"></h4>
+                <img id="connectionPhoto" src="" alt="Picture of your Connection">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
 
+    <br>
+    
     <footer class="footer">
         <div class="container">
           <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/taydougherty/Friend-Finder.git">GitHub Repo</a>
         </div>
-      </footer>
+    </footer>
 
   </div>
 
