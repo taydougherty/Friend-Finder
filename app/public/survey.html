@@ -195,7 +195,7 @@
             </div>
             <div class="modal-body">
                 <h4 id="connectionName"></h4>
-                <img id="connectionPhoto" src="" alt="Picture of your Connection">
+                <img id="connectionPhoto" src="" style="width:500px;height:600px;" alt="Picture of your Connection">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -215,11 +215,10 @@
   </div>
 
 </body>
-
 </html>
 
 <script type="text/javascript">
-$(".submit").on("click", function(event) {
+$("#submit").on("click", function(event) {
     event.preventDefault();
 
     var newConnection = {

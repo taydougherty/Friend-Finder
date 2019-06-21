@@ -7,9 +7,16 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-    // add the part where you find the difference
-    // use the reduce method 
-    //  store the difference in a friend variable and then display the friend
+      var defaultDifference = 10000;
+      var friend = {};
+
+      friendData.forEach(element => {
+          var num = element.scores.reduce((a,b) => a + b);
+          if(Math.abs(num - req.body.scores.reduce((a,b) => a + b, 0)) < defaultDifference) {
+              defaultDifference = Math.abs(num - req.body.scores.reduce((a,b) => a + b, 0));
+              friend = element;
+          }
+      })
       friendData.push(req.body);
       res.json(friend);
   });
