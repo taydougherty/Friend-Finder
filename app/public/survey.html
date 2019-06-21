@@ -242,6 +242,7 @@ $("#submit").on("click", function(event) {
 
     $.post("/api/friends", newConnection,
       function(data) {
+          console.log(data);
         $("#connectionName").text(data.name);
         $("#connectionPhoto").attr("src", data.photo);
         $(".connectionModal").modal("toggle");
