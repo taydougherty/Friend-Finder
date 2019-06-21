@@ -4,7 +4,7 @@ Puppy Love is a web-based app to help man's best friend find their own life comp
 
 ## Link to Live App
 
-* [Find your puppy love here!] (https://serene-hamlet-73684.herokuapp.com/)
+* [Find your puppy love here!](https://serene-hamlet-73684.herokuapp.com/)
 
 ### Technologies Used
 
