@@ -1,7 +1,7 @@
 var friendArray = [
     {
       "name": "Vienna",
-      "photo": "https://www.instagram.com/p/Bwpg-GdgBRI/?utm_source=ig_web_button_share_sheet",
+      "photo": "https://images.app.goo.gl/VAPfzEhdmeCF1tVp6",
       "scores": [
         5,
         1,
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
         "name": "Corky",
-        "photo": "https://www.instagram.com/p/BYi64ezH-lv/?utm_source=ig_web_button_share_sheet",
+        "photo": "https://images.app.goo.gl/jBep1mDfkGK5PNmM8",
         "scores": [
           5,
           2,
