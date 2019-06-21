@@ -184,25 +184,23 @@
 
     <button type="submit" class="btn btn-lg btn-primary btn-block" id="submit" data-toggle="modal"><span class="fa fa-check-square"></span> Submit</button>
 
-    <div class="modal" tabindex="-1" role="dialog" class="connectionModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">This is your best match!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
+    <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                  <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-                <h4 id="connectionName"></h4>
-                <img id="connectionPhoto" src="" style="width:500px;height:600px;" alt="Picture of your Connection">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-        </div>
+          </div>
 
     <br>
     
@@ -243,9 +241,9 @@ $("#submit").on("click", function(event) {
     $.post("/api/friends", newConnection,
       function(data) {
           console.log(data);
-        $("#connectionName").text(data.name);
-        $("#connectionPhoto").attr("src", data.photo);
-        $(".connectionModal").modal("toggle");
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
+        $("#results-modal").modal("toggle");
 
         // Clear the form when submitting
         $("#name").val("");
