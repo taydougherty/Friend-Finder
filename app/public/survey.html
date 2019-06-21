@@ -244,7 +244,7 @@ $("#submit").on("click", function(event) {
       function(data) {
         $("#connectionName").text(data.name);
         $("#connectionPhoto").attr("src", data.photo);
-        $("#connectionModal").modal("toggle");
+        $(".connectionModal").modal("toggle");
 
         // Clear the form when submitting
         $("#name").val("");
