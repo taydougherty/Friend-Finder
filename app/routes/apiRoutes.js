@@ -21,7 +21,7 @@ module.exports = function(app) {
               defaultDifference = Math.abs(num - req.body.scores.reduce((a,b) => a + b, 0));
               friend = element;
           }
-      })
+      });
 
       friendData.push(req.body);
       res.json(friend);
