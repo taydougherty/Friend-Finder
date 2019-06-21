@@ -1,7 +1,7 @@
 var friendArray = [
     {
       "name": "Vienna",
-      "photo": "https://images.app.goo.gl/VAPfzEhdmeCF1tVp6",
+      "photo": "https://images.app.goo.gl/JFEkLAx1ViZTS44H6",
       "scores": [
         5,
         1,
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
         "name": "Corky",
-        "photo": "https://images.app.goo.gl/jBep1mDfkGK5PNmM8",
+        "photo": "https://images.app.goo.gl/qFzTybsXHLrZVoEMA",
         "scores": [
           5,
           2,
