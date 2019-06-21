@@ -10,13 +10,19 @@ module.exports = function(app) {
       var defaultDifference = 10000;
       var friend = {};
 
+      for(var i=0; i < req.body.scores.length; i++){
+        req.body.scores[i] = Number(req.body.scores[i]);
+    }
+
       friendData.forEach(element => {
           var num = element.scores.reduce((a,b) => a + b);
+
           if(Math.abs(num - req.body.scores.reduce((a,b) => a + b, 0)) < defaultDifference) {
               defaultDifference = Math.abs(num - req.body.scores.reduce((a,b) => a + b, 0));
               friend = element;
           }
       })
+
       friendData.push(req.body);
       res.json(friend);
   });
