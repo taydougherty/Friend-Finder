@@ -1,4 +1,4 @@
-# Puppy Love
+# :dog: Puppy Love :heart:
 
 Puppy Love is a web-based app to help man's best friend find their own life companion! Fill out the questionnaire to help us search the dog-web for your pawfect match.
 
